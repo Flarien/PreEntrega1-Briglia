@@ -6,7 +6,7 @@ const CartWidget = () => {
 
   return(
     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems:'center', flexDirection: 'column' }}>
-      <IconButton sx={{color:'#f5f5f5'}}  aria-label="Carrito de compras">
+      <IconButton sx={{color:'#f5f5f5'}} aria-label="Carrito de compras">
         <ShoppingCartIcon fontSize="large" />
       </IconButton>
       0    
