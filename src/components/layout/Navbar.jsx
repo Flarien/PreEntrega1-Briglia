@@ -3,7 +3,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import logo from "../../assets/logo/logo_blanco.png";
 import CartWidget from "../common/CartWidget";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
@@ -12,7 +11,6 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
 const Navbar = () => {
-  
   const pages = ["Productos", "Nosotros", "Contacto"];
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -40,11 +38,11 @@ const Navbar = () => {
               mr: 1,
             }}
           >
-            <img src={logo} alt="Logo" style={{ width: "5em" }} />
+            <img src="/public/images/logo_blanco.png" alt="Logo" style={{ width: "5em", marginLeft: "0.5em" }} />
           </IconButton>
 
           {/* Menu  md*/}
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -107,7 +105,7 @@ const Navbar = () => {
               aria-label="menu"
               sx={{ display: { xs: "flex", md: "none" } }}
             >
-              <img src={logo} alt="Logo" style={{ width: "5em" }} />
+              <img src="/public/images/favicon.png" alt="Logo" style={{ width: "5em" }} />
             </IconButton>
           </Box>
 
@@ -115,6 +113,7 @@ const Navbar = () => {
           <Box
             sx={{
               display: "flex",
+              marginRight: "0.5em",
             }}
           >
             <CartWidget />
