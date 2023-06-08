@@ -1,4 +1,3 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -10,19 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const Navbar = () => {
-  const pages = ["Productos", "Nosotros", "Contacto"];
-
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
+export const NavbarPresentacional = ({pages, anchorElNav, handleOpenNavMenu, handleCloseNavMenu }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: "#899752" }}>
@@ -121,7 +108,5 @@ const Navbar = () => {
         </Toolbar>
       </AppBar>
     </Box>
-  );
-};
-
-export default Navbar;
+  )
+}

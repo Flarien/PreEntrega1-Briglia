@@ -1,10 +1,10 @@
-import Navbar from "./components/layout/Navbar";
+import { NavbarContainer } from "./components/layout/NavbarContainer";
 import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <NavbarContainer />
       <ItemListContainer
         greeting={"Bienvenidos a FloreSer: Llena de vida tu hogar 🌼🪴"}
       />
