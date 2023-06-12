@@ -2,12 +2,13 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import CartWidget from "../common/CartWidget";
+import CartWidget from "../../common/CartWidget";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
 export const NavbarPresentacional = ({pages, anchorElNav, handleOpenNavMenu, handleCloseNavMenu }) => {
   return (
@@ -92,7 +93,7 @@ export const NavbarPresentacional = ({pages, anchorElNav, handleOpenNavMenu, han
               aria-label="menu"
               sx={{ display: { xs: "flex", md: "none" } }}
             >
-              <img src="/public/images/favicon.png" alt="Logo" style={{ width: "5em" }} />
+             <Link to="/"><img src="/public/images/logo_blanco.png" alt="Logo" style={{ width: "5em" }} /></Link> 
             </IconButton>
           </Box>
 
