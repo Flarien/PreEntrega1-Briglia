@@ -13,6 +13,9 @@ export const Footer = () => {
       sx={{
         backgroundColor: "#899752",
         py: 3,
+        position: "fixed",
+        bottom: 0,
+        width: "100%",
       }}
     >
       <Box
@@ -22,6 +25,7 @@ export const Footer = () => {
           display: "flex",
           alignItems: { xs: "center", sm: "flex-start" },
           justifyContent: "space-between",
+          
           flexDirection: { xs: "column", sm: "row" },
           textAlign: { xs: "center", sm: "left" },
           px: { xs: 2, sm: 4 },
@@ -30,32 +34,26 @@ export const Footer = () => {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
             alignItems: "center",
-            textDecoration: "none",
-            color: "white",
-            mb: { xs: 1, sm: 0 },
+            marginLeft: { xs: 0, sm: "3em" }
           }}
         >
           <Link to="/">
             <img
               src="/public/images/logo_color.png"
               alt="Logo"
-              style={{ width: "100px", marginRight: "10px" }}
+              style={{ width: "100px" }}
             />
           </Link>
-
-          <Typography variant="body2" component="span">
-            Todos los derechos reservados
-          </Typography>
         </Box>
+
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <IconButton
             component="a"
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{color: "white"}}
+            sx={{ color: "white" }}
           >
             <FacebookIcon />
           </IconButton>
@@ -64,7 +62,7 @@ export const Footer = () => {
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{color: "white"}}
+            sx={{ color: "white" }}
           >
             <InstagramIcon />
           </IconButton>
@@ -73,7 +71,7 @@ export const Footer = () => {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
-            sx={{color: "white"}}
+            sx={{ color: "white" }}
           >
             <TwitterIcon />
           </IconButton>
@@ -91,28 +89,31 @@ export const Footer = () => {
         }}
       >
         <Typography
-          variant="body2"
-          component="a"
-          href="/about"
-          sx={{ mx: 1, textDecoration: "none", color: "white" }}
+          variant="caption"
+          sx={{
+            mx: 1,
+            textDecoration: "none",
+            color: "white",
+            marginRight: "auto",
+          }}
         >
-          Sobre Nosotros
+          © Todos los derechos reservados
         </Typography>
-        <Typography
-          variant="body2"
-          component="a"
-          href="/faq"
-          sx={{ mx: 1, textDecoration: "none", color: "white" }}
-        >
-          FAQ
+
+        <Typography variant="body2" sx={{ mx: 1, textDecoration: "none" }}>
+          <Link to="/" style={{ color: "white" }}>
+            Sobre Nosotros
+          </Link>
         </Typography>
-        <Typography
-          variant="body2"
-          component="a"
-          href="/contact"
-          sx={{ mx: 1, textDecoration: "none", color: "white" }}
-        >
-          Contacto
+        <Typography variant="body2" sx={{ mx: 1, textDecoration: "none" }}>
+          <Link to="/" style={{ color: "white" }}>
+            FAQ
+          </Link>
+        </Typography>
+        <Typography variant="body2" sx={{ mx: 1, textDecoration: "none" }}>
+          <Link to="/" style={{ color: "white" }}>
+            Contacto
+          </Link>
         </Typography>
         <Typography variant="body2" component="a" href="/"></Typography>
       </Box>
