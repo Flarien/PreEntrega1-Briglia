@@ -1,7 +1,4 @@
-
-import Layout from "./components/layout/Layout";
-
-import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
+import CounterContainer from "./components/common/counter/ConterContainer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -9,11 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
-
-          <Route path="/" element={<ItemListContainer />} />
-        
-        </Route>
+        <Route path="/" element={<CounterContainer />} />
       </Routes>
     </BrowserRouter>
   );
