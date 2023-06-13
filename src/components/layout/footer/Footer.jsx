@@ -13,7 +13,6 @@ export const Footer = () => {
       sx={{
         backgroundColor: "#899752",
         py: 3,
-        position: "fixed",
         bottom: 0,
         width: "100%",
       }}
