@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
 
-          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/" element={<ItemListContainer greeting={"Bienvenidos a FloreSer: Llena de vida tu hogar 🌼🪴"} />} />
         
         </Route>
       </Routes>
