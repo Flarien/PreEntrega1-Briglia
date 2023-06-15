@@ -2,20 +2,24 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import CartWidget from "../../common/CartWidget";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import CartWidget from "../../common/cartWidget/CartWidget";
 
-export const NavbarPresentacional = ({pages, anchorElNav, handleOpenNavMenu, handleCloseNavMenu }) => {
+export const NavbarPresentacional = ({
+  pages,
+  anchorElNav,
+  handleOpenNavMenu,
+  handleCloseNavMenu,
+}) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: "#899752" }}>
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-    
           {/* Logo md */}
           <IconButton
             edge="start"
@@ -26,7 +30,11 @@ export const NavbarPresentacional = ({pages, anchorElNav, handleOpenNavMenu, han
               mr: 1,
             }}
           >
-            <img src="/public/images/logo_blanco.png" alt="Logo" style={{ width: "5em", marginLeft: "0.5em" }} />
+            <img
+              src="/public/images/logo_blanco.png"
+              alt="Logo"
+              style={{ width: "5em", marginLeft: "0.5em" }}
+            />
           </IconButton>
 
           {/* Menu  md*/}
@@ -93,7 +101,13 @@ export const NavbarPresentacional = ({pages, anchorElNav, handleOpenNavMenu, han
               aria-label="menu"
               sx={{ display: { xs: "flex", md: "none" } }}
             >
-             <Link to="/"><img src="/public/images/logo_blanco.png" alt="Logo" style={{ width: "5em" }} /></Link> 
+              <Link to="/">
+                <img
+                  src="/public/images/logo_blanco.png"
+                  alt="Logo"
+                  style={{ width: "5em" }}
+                />
+              </Link>
             </IconButton>
           </Box>
 
@@ -109,5 +123,5 @@ export const NavbarPresentacional = ({pages, anchorElNav, handleOpenNavMenu, han
         </Toolbar>
       </AppBar>
     </Box>
-  )
-}
+  );
+};
