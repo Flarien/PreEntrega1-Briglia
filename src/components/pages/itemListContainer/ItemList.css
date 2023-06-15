@@ -2,10 +2,10 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  background-color: black;
+  background-color: rgb(103, 103, 103);
   min-height: 100vh;
 }
