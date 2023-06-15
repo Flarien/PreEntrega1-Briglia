@@ -21,21 +21,24 @@ export const NavbarPresentacional = ({
       <AppBar position="static" sx={{ backgroundColor: "#899752" }}>
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
           {/* Logo md */}
-          <IconButton
-            edge="start"
-            aria-label="menu"
-            sx={{
-              padding: "0.5em",
-              display: { md: "flex", xs: "none" },
-              mr: 1,
-            }}
-          >
-            <img
-              src="/public/images/logo_blanco.png"
-              alt="Logo"
-              style={{ width: "5em", marginLeft: "0.5em" }}
-            />
-          </IconButton>
+
+          <Link to="/">
+            <IconButton
+              edge="start"
+              aria-label="menu"
+              sx={{
+                padding: "0.5em",
+                display: { md: "flex", xs: "none" },
+                mr: 1,
+              }}
+            >
+              <img
+                src="/public/images/logo_blanco.png"
+                alt="Logo"
+                style={{ width: "5em", marginLeft: "0.5em" }}
+              />
+            </IconButton>
+          </Link>
 
           {/* Menu  md*/}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
