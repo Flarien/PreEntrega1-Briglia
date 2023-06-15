@@ -1,9 +1,7 @@
 
-import Layout from "./components/layout/Layout";
-
-import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
 
 const App = () => {
   return (
@@ -11,7 +9,7 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
 
-          <Route path="/" element={<ItemListContainer greeting={"Bienvenidos a FloreSer: Llena de vida tu hogar 🌼🪴"} />} />
+          <Route path="/" element={<ItemListContainer />} />
         
         </Route>
       </Routes>
