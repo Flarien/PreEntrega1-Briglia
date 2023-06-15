@@ -35,7 +35,7 @@ const ItemCard = ({ elemento }) => {
           <CardContent>
             <Typography
               gutterBottom
-              variant="h5"
+              variant="h4"
               component="div"
               textAlign={"center"}
             >
