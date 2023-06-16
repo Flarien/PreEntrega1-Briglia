@@ -2,16 +2,13 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import CartWidget from "../../common/cartWidget/CartWidget";
 
 export const NavbarPresentacional = ({
-  pages,
   anchorElNav,
   handleOpenNavMenu,
   handleCloseNavMenu,
@@ -40,18 +37,51 @@ export const NavbarPresentacional = ({
             </IconButton>
           </Link>
 
-          {/* Menu  md*/}
+
+          {/* Menu md */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button
+              component={Link}
+              to="/"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "white", mx: 1 }}
+            >
+              Productos
+            </Button>
+            <Button
+              component={Link}
+              to="/category/interior"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "white", mx: 1 }}
+            >
+              Plantas de Interior
+            </Button>
+            <Button
+              component={Link}
+              to="/category/exterior"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "white", mx: 1 }}
+            >
+              Plantas de Exterior
+            </Button>
+            <Button
+              component={Link}
+              to="/nosotros"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "white", mx: 1 }}
+            >
+              Nosotros
+            </Button>
+            <Button
+              component={Link}
+              to="/contacto"
+              onClick={handleCloseNavMenu}
+              sx={{ color: "white", mx: 1 }}
+            >
+              Contacto
+            </Button>
           </Box>
+
 
           {/* Menu xs */}
           <IconButton
@@ -83,11 +113,6 @@ export const NavbarPresentacional = ({
               display: { xs: "block", md: "none" },
             }}
           >
-            {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
-            ))}
           </Menu>
 
           {/* LOGO xs */}

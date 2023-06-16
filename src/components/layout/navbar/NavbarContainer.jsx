@@ -2,7 +2,6 @@ import * as React from "react";
 import { NavbarPresentacional } from "./NavbarPresentacional";
 
 export const NavbarContainer = () => {
-  const pages = ["Productos", "Nosotros", "Contacto"];
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -16,10 +15,10 @@ export const NavbarContainer = () => {
 
   return (
     <NavbarPresentacional
-      pages={pages}
       anchorElNav={anchorElNav}
       handleOpenNavMenu={handleOpenNavMenu}
       handleCloseNavMenu={handleCloseNavMenu}
     />
   );
 };
+

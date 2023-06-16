@@ -10,12 +10,12 @@ const ItemListContainer = () => {
 
   useEffect(() => {
 
-    let itemFilter = products.filter(
+    let productosFiltrados = products.filter(
       (product) => product.category === categoryName
     );
 
     const getItem = new Promise((resolve) => {
-      resolve(categoryName ? itemFilter : products);
+      resolve(categoryName ? productosFiltrados : products);
     });
 
     getItem
