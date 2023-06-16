@@ -1,15 +1,17 @@
-.cards-detail{
+.cards-detail-gral{
   width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.card-img{
-  width: 350;
+.cards-detail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.5em;
 }
