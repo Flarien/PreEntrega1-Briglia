@@ -4,7 +4,7 @@ const Nosotros = () => {
 
       <div>
         <h1>Sobre nosotros</h1>
-        <p>Componente Nosotros</p>
+        <p>Proximamente... Componente Nosotros</p>
       </div>
 
     

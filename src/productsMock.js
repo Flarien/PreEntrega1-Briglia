@@ -5,7 +5,7 @@ export const products = [
     price: 1500,
     stock: 6,
     description: "Tulipán (tulplanis politicae)",
-    category: "Exterior",
+    category: "exterior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496473/exterior-1_paewfg.webp",
   },
 
@@ -15,7 +15,7 @@ export const products = [
     price: 3400,
     stock: 5,
     description: "Yucca (Asparagaceae)",
-    category: "Exterior",
+    category: "exterior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496473/exterior-2_xgw5sz.webp",
   },
 
@@ -25,7 +25,7 @@ export const products = [
     price: 2800,
     stock: 9,
     description: "Helecho (Dryopteridaceae)",
-    category: "Exterior",
+    category: "exterior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496473/exterior-3_brz6qc.webp",
   },
 
@@ -35,7 +35,7 @@ export const products = [
     price: 1200,
     stock: 5,
     description: "Prímula (Primuláceae)",
-    category: "Exterior",
+    category: "exterior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496474/exterior-4_vc7eea.webp",
   },
 
@@ -45,7 +45,7 @@ export const products = [
     price: 2500,
     stock: 8,
     description: "Margarita Africana (Osteospermun fruticosum)",
-    category: "Exterior",
+    category: "exterior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496474/exterior-5_ju6k2e.webp",
   },
 
@@ -55,7 +55,7 @@ export const products = [
     price: 4500,
     stock: 5,
     description: "Cuna de Moisés (Spathiphyllum)",
-    category: "Interior",
+    category: "interior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496474/interior-1_txru35.webp",
   },
 
@@ -65,7 +65,7 @@ export const products = [
     price: 3800,
     stock: 5,
     description: "Alocasia Amazónica (Alocasia sanderiana)",
-    category: "Interior",
+    category: "interior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496474/interior-2_psb6je.webp",
   },
 
@@ -75,7 +75,7 @@ export const products = [
     price: 4800,
     stock: 5,
     description: "Palma Areka (Dypsis lutescens)",
-    category: "Interior",
+    category: "interior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496474/interior-3_x0x0mi.webp",
   },
 
@@ -85,7 +85,7 @@ export const products = [
     price: 6400,
     stock: 5,
     description: "Corazón de Jesús (Caladium bicolor aiton)",
-    category: "Interior",
+    category: "interior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496475/interior-4_mp4jcy.webp",
   },
 
@@ -95,7 +95,7 @@ export const products = [
     price: 5300,
     stock: 5,
     description: "Calathea (Calathea roseopicta)",
-    category: "Interior",
+    category: "interior",
     img: "https://res.cloudinary.com/dciovdqaf/image/upload/v1686496475/interior-5_x7yuqi.webp",
   },
 ];
