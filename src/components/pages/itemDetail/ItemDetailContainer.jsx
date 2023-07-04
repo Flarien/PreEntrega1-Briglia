@@ -1,24 +1,29 @@
-import { useEffect, useState } from "react";
-import { products } from "../../../productsMock";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
+
+import { db } from "../../../firebaseConfig";
+
+import { collection, getDoc, doc } from "firebase/firestore";
+import { CartContext } from "../../../context/CartContext";
+
 
 const ItemDetailContainer = () => {
   const [itemSelected, setItemSelected] = useState({});
 
+  const {agregarAlCarrito} = useContext(CartContext);
+
   const { id } = useParams();
-  console.log(id);
 
   useEffect(() => {
-    let productFind = products.find((product) => product.id === +id);
 
-    const getProduct = new Promise((res) => {
-      res(productFind);
-    });
+    let itemCollection = collection (db, "products")
+    let refDoc = doc (itemCollection, id)
+    getDoc(refDoc)
+      .then( (res) => {
+        setItemSelected({ ...res.data(), id: res.id})
+      })
 
-    getProduct
-      .then((res) => setItemSelected(res))
-      .catch((err) => console.log(err));
   }, [id]);
 
   return (
