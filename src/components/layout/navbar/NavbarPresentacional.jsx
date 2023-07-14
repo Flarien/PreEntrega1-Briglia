@@ -30,7 +30,7 @@ export const NavbarPresentacional = ({
               }}
             >
               <img
-                src="/public/images/logo_blanco.png"
+                src="https://res.cloudinary.com/dciovdqaf/image/upload/v1689378015/logo_blanco_uzmsux.png"
                 alt="Logo"
                 style={{ width: "5em", marginLeft: "0.5em" }}
               />
@@ -131,7 +131,7 @@ export const NavbarPresentacional = ({
             >
               <Link to="/">
                 <img
-                  src="/public/images/logo_blanco.png"
+                  src="https://res.cloudinary.com/dciovdqaf/image/upload/v1689378015/logo_blanco_uzmsux.png.png"
                   alt="Logo"
                   style={{ width: "5em" }}
                 />

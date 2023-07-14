@@ -28,7 +28,7 @@ git clone https://github.com/Flarien/ProyectoFinal-Briglia.git
 ## 
 
 ### Visita el Sitio Web: 
-  `<link>` : <https://proyecto-final-briglia.vercel.app/>
+`<link>` : <https://proyecto-final-briglia.vercel.app/>
 
 ### Autor: 
-GFM a-tail link @Flarien
+`<link>` : <https://github.com/Flarien>

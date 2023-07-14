@@ -10,8 +10,6 @@ import { CartContainer } from "./components/pages/cart/CartContainer";
 import CartContextProvider from "./context/CartContext";
 import CheckoutContainer from "./components/pages/checkout/CheckoutContainer";
 
-import './App.css';
-
 const App = () => {
   return (
     <BrowserRouter>

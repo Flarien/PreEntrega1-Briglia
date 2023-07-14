@@ -39,7 +39,7 @@ export const Footer = () => {
         >
           <Link to="/">
             <img
-              src="/public/images/logo_color.png"
+              src="https://res.cloudinary.com/dciovdqaf/image/upload/v1689378015/logo_color_ss6eyn.png"
               alt="Logo"
               style={{ width: "100px" }}
             />
