@@ -1,10 +1,12 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./Cart.css";
-const Cart = ({ cart, limpiar, removeById, total }) => {
+const Cart = ({ cart, limpiar, removeById, total, cantidadTotal }) => {
   return (
-    <div>
+    <div className="checkout-container">
+      <h1 className="cart-title">Checkout</h1>
       <div className="cart-container">
+        
         <div className="container-items">
           {cart.map((item) => {
             return (
@@ -15,36 +17,44 @@ const Cart = ({ cart, limpiar, removeById, total }) => {
                   <h2>${item.price}.-</h2>
                   <h2>Unidades: {item.quantity}</h2>
                 </div>
-                <Button variant="contained" onClick={() => removeById(item.id)}>
+                <Button
+                  variant="contained"
+                  color="warning"
+                  onClick={() => removeById(item.id)}
+                >
                   Quitar
                 </Button>
               </div>
             );
           })}
         </div>
-        <div className="cart-info">
-          <h2>Descripcion del carrito:</h2>
-          <h3>Cantidad de productos: </h3>
-          <h3>Precio total: {total}</h3>
-          <h3>Descuento: </h3>
-          <h3>Precio final: </h3>
           {cart.length > 0 ? (
-            <div className="btn-cart">
-              <Button onClick={limpiar} variant="contained">
-                Vaciar carrito
-              </Button>
-              <Link to="/checkout">
-                <Button variant="contained">Finalizar compra</Button>
+          <div className="cart-info">
+            <h2>Resumen del carrito:</h2>
+            <h3>Cantidad de productos: {cantidadTotal} </h3>
+            <h3>Precio total: $ {total}.-</h3>
+              <div className="btn-cart">
+                <Button onClick={limpiar} variant="contained" color="error">
+                  Vaciar carrito
+                </Button>
+                <Link to="/checkout">
+                  <Button variant="contained" color="success">
+                    Finalizar compra
+                  </Button>
+                </Link>
+            </div>
+          </div>
+          ) : (
+            <div className="cart-add">
+              <h2>Tu carrito está vacío.</h2>
+              <Link to="/">
+                <Button variant="contained" color="success">
+                  Agrega productos
+                </Button>
               </Link>
             </div>
-          ) : (
-            <Link to="/">
-              <Button variant="contained">Agrega productos</Button>
-            </Link>
           )}
-
-          <h1>El total del carrito es ${total}</h1>
-        </div>
+        
       </div>
     </div>
   );

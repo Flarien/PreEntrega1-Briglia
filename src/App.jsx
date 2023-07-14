@@ -8,8 +8,9 @@ import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContain
 
 import { CartContainer } from "./components/pages/cart/CartContainer";
 import CartContextProvider from "./context/CartContext";
-import Form from "./components/pages/form/Form";
 import CheckoutContainer from "./components/pages/checkout/CheckoutContainer";
+
+import './App.css';
 
 const App = () => {
   return (
@@ -24,7 +25,6 @@ const App = () => {
             <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
-            <Route path="/form" element={<Form />} />
             <Route path="/carrito" element={<CartContainer />} />
             <Route path="/checkout" element={<CheckoutContainer />} />
         

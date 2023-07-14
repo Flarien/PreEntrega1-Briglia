@@ -15,15 +15,13 @@ const CheckoutContainer = () => {
 
   const { handleSubmit, handleChange, errors } = useFormik({
     initialValues: {
-      name: "",
+      nombre: "",
       email: "",
-      phone: "",
+      telefono: "",
     },
 
     onSubmit: (data) => {
       
-      console.log(data)
-
       let order = {
         buyer: data,
         items: cart,
@@ -45,14 +43,14 @@ const CheckoutContainer = () => {
 
     validateOnChange: false,
     validationSchema: Yup.object({
-      name: Yup.string()
-        .required("Este campo es obligatorio")
-        .min(3, "Este campo debe contener al menos 3 caracteres"),
+      nombre: Yup.string()
+        .required("El nombre es obligatorio")
+        .min(3, "El campo debe tener al menos 3 caracteres"),
       email: Yup.string()
-        .email("Este campo no corresponde a un email valido")
-        .required("Este campo es obligatorio"),
-      phone: Yup.string()
-        .required("Este campo es obligatorio")
+        .email("Ingresa una dirección de email válida")
+        .required("El email es requerrido"),
+      telefono:Yup.string()
+        .required("El teléfono es obligatorio")
         .min(10, "El telefono no cumple los requisitos"),
     }),
   });

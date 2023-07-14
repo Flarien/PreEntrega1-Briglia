@@ -27,6 +27,8 @@ export const CartContainer = () => {
     });
   };
 
+  const cantidadTotal = cart.reduce((total, item) => total + item.quantity, 0);
+
   return (
 
     <div>
@@ -37,6 +39,7 @@ export const CartContainer = () => {
           limpiar={limpiar}
           cart={cart}
           removeById={removeById}
+          cantidadTotal={cantidadTotal}
         />
       </div>
 
@@ -44,19 +47,4 @@ export const CartContainer = () => {
     </div>
   )
 
-}    
-
-
-  // este es el viejo return. iba dentro del div: 
-  // <button onClick={clearCart}>Limpiar carrito</button>
-
-  //     {cart.map((product) => {
-  //       return (
-  //         <div key={product.id}>
-  //           <h2>{product.title}</h2>
-  //           <h3>{product.price}</h3>
-  //           <h3>{product.quantity}</h3>
-  //           <button onClick={()=>removeById(product.id)}>Eliminar</button>
-  //         </div>
-  //       );
-  //     })} 
+}   

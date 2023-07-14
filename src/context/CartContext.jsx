@@ -68,7 +68,6 @@ const CartContextProvider = ({ children }) => {
   };
 
   let data = {
-  
     cart,
     addToCart,
     clearCart,
