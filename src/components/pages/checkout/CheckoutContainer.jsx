@@ -5,6 +5,7 @@ import { db } from "../../../firebaseConfig";
 import { collection, addDoc, updateDoc, doc } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
+import "./CheckoutContainer.css";
 
 const CheckoutContainer = () => {
   const { cart, getTotalPrice, clearCart } = useContext(CartContext);
@@ -58,7 +59,7 @@ const CheckoutContainer = () => {
   return (
     <div>
       {orderId ? (
-        <h1>Su compra fue exitosa, el numero de comprobante es: {orderId}</h1>
+        <h1 className="checkout-success-message">Su compra fue exitosa, el numero de comprobante es: {orderId}</h1>
       ) : (
         <Checkout
           handleSubmit={handleSubmit}

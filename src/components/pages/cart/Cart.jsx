@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./Cart.css";
+
 const Cart = ({ cart, limpiar, removeById, total, cantidadTotal }) => {
   return (
     <div className="checkout-container">

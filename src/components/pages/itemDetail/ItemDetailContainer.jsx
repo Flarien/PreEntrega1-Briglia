@@ -7,6 +7,7 @@ import { db } from "../../../firebaseConfig";
 import { collection, getDoc, doc } from "firebase/firestore";
 import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
+import { Box, CircularProgress } from "@mui/material";
 
 const ItemDetailContainer = () => {
   const [itemSelected, setItemSelected] = useState({});
@@ -43,17 +44,26 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-    {itemSelected.id ? (
-      <ItemDetail
-        cantidad={cantidad}
-        itemSelected={itemSelected}
-        addToCart={addToCart}
-        onAdd={onAdd}
-      />
-    ) : (
-      <h1>Cargando...</h1>
-    )}
-  </div>
+      {itemSelected.id ? (
+        <ItemDetail
+          cantidad={cantidad}
+          itemSelected={itemSelected}
+          addToCart={addToCart}
+          onAdd={onAdd}
+        />
+      ) : (
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            minHeight: "100vh",
+          }}
+        >
+          <CircularProgress color="success" />
+        </Box>
+      )}
+    </div>
   );
 };
 
