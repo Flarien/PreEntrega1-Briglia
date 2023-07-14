@@ -1,8 +1,8 @@
 import { Button, TextField } from "@mui/material";
 
-export default function Checkout({ handleSubmit, handleChange, errors }) {
+const Checkout = ({ handleSubmit, handleChange, errors }) => {
   return (
-    <div>
+    <div style={{ paddingTop: "50px" }}>
       <form onSubmit={handleSubmit}>
         <TextField
           label="Name"
@@ -34,4 +34,6 @@ export default function Checkout({ handleSubmit, handleChange, errors }) {
       </form>
     </div>
   );
-}
+};
+
+export default Checkout;

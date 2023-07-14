@@ -6,6 +6,12 @@
   margin: 0.5em;
 }
 
+.counter-buttons {
+
+  flex-direction: row;
+  
+}
+
 .counter-calc {
   background-color: #e0e0e0;
   border: none;

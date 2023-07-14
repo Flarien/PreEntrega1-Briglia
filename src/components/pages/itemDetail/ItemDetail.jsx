@@ -1,16 +1,7 @@
 import ItemCount from "../../common/counter/ItemCount";
 import "./ItemDetail.css";
 
-const ItemDetail = ({ itemSelected }) => {
-  const onAdd = (cantidad) => {
-    let data = {
-      ...itemSelected,
-      quantity: cantidad,
-    };
-
-    console.log(data);
-  };
-
+const ItemDetail = ({ itemSelected, onAdd, cantidad }) => {
   return (
     <div className="cards-detail-gral">
       <div className="cards-detail">
@@ -22,11 +13,14 @@ const ItemDetail = ({ itemSelected }) => {
         />
         <h3 style={{ color: "gray" }}>{itemSelected.description}</h3>
         <h2>${itemSelected.price}</h2>
-
       </div>
       <div className="cards-detail">
         {itemSelected.stock > 0 ? (
-          <ItemCount stock={itemSelected.stock} initial={1} onAdd={onAdd} />
+          <ItemCount
+            stock={itemSelected.stock}
+            initial={cantidad}
+            onAdd={onAdd}
+          />
         ) : (
           <h3>No hay stock</h3>
         )}
