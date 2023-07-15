@@ -72,14 +72,6 @@ export const NavbarPresentacional = ({
             >
               Nosotros
             </Button>
-            <Button
-              component={Link}
-              to="/contacto"
-              onClick={handleCloseNavMenu}
-              sx={{ color: "white", mx: 1 }}
-            >
-              Contacto
-            </Button>
           </Box>
 
 
@@ -113,6 +105,19 @@ export const NavbarPresentacional = ({
               display: { xs: "block", md: "none" },
             }}
           >
+                        <IconButton
+              component={Link}
+              to="/" 
+              aria-label="menu"
+              sx={{ display: { xs: "flex", md: "none" } }}
+              onClick={handleCloseNavMenu}
+            >
+              <img
+                src="https://res.cloudinary.com/dciovdqaf/image/upload/v1689378015/logo_blanco_uzmsux.png"
+                alt="Logo"
+                style={{ width: "5em" }}
+              />
+            </IconButton>
           </Menu>
 
           {/* LOGO xs */}

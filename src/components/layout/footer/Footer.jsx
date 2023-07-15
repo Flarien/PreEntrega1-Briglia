@@ -24,7 +24,6 @@ export const Footer = () => {
           display: "flex",
           alignItems: { xs: "center", sm: "flex-start" },
           justifyContent: "space-between",
-          
           flexDirection: { xs: "column", sm: "row" },
           textAlign: { xs: "center", sm: "left" },
           px: { xs: 2, sm: 4 },

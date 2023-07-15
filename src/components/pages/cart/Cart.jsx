@@ -5,7 +5,7 @@ import "./Cart.css";
 const Cart = ({ cart, limpiar, removeById, total, cantidadTotal }) => {
   return (
     <div className="checkout-container">
-      <h1 className="cart-title">Checkout</h1>
+      <h1 className="cart-title">Carrito de Compras</h1>
       <div className="cart-container">
         
         <div className="container-items">
