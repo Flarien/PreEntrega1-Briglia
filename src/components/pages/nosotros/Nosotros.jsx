@@ -3,9 +3,7 @@ import { Box, Typography } from "@mui/material";
 const Nosotros = () => {
   return (
     <Box sx={{ maxWidth: "800px", margin: "0 auto", padding: "20px" }}>
-      <Typography variant="h1" sx={{ marginBottom: "20px" }}>
-        Sobre nosotros
-      </Typography>
+      <h1 className="title">Sobre Nosotros</h1>
       <Typography variant="body1" sx={{ marginBottom: "10px" }}>
         Vivero FloreSer es una empresa familiar dedicada desde hace generaciones a la producción y venta de plantas y servicios de paisajismo. Nos encontramos en pleno centro geográfico de la ciudad de Mar del Plata.
       </Typography>

@@ -61,7 +61,7 @@ const ItemListContainer = () => {
         <CircularProgress color="success" />
       </Box>
       ) : (
-        <ItemListPresentacional items={items} />
+        <ItemListPresentacional items={items} categoryName={categoryName} />
       )}
     </>
   );

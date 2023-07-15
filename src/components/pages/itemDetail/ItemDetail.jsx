@@ -5,7 +5,7 @@ const ItemDetail = ({ itemSelected, onAdd, cantidad }) => {
   return (
     <div className="cards-detail-gral">
       <div className="cards-detail">
-        <h1>{itemSelected.title}</h1>
+        <h1 className="title">{itemSelected.title}</h1>
         <img
           src={itemSelected.img}
           alt={itemSelected.description}

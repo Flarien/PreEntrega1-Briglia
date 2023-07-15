@@ -2,12 +2,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-}
-
-.cart-title {
-  text-align: center;
-  margin: 20px 0;
 }
 
 .cart-container {

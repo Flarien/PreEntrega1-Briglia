@@ -6,7 +6,5 @@
   height: 100vh;
   min-height: 100vh;
   font-size: 24px;
-  color: #008000;
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-
+  color: rgb(83, 92, 39);
 }

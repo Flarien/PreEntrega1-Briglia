@@ -10,3 +10,13 @@
 body{
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
 }
+
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(83, 92, 39);
+  font-weight: 400;
+  font-size: 3rem;
+  text-decoration: underline;
+}
