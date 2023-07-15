@@ -18,8 +18,8 @@ const Checkout = ({ handleSubmit, handleChange, errors }) => {
               name="nombre"
               color="success"
               onChange={handleChange}
-              helperText={errors.name}
-              error={errors.name ? true : false}
+              helperText={errors.nombre}
+              error={errors.nombre ? true : false}
             />
             <TextField
               label="Email"
@@ -36,8 +36,8 @@ const Checkout = ({ handleSubmit, handleChange, errors }) => {
               name="telefono"
               color="success"
               onChange={handleChange}
-              helperText={errors.phone}
-              error={errors.phone ? true : false}
+              helperText={errors.telefono}
+              error={errors.telefono ? true : false}
             />
             <Button variant="contained" type="submit" color="success">
               Finalizar Compra
